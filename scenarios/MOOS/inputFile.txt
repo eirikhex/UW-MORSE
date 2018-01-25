@@ -1,0 +1,72 @@
+#This is an inputfile. Do not change structure/
+#Name of ROV:
+Minerva
+#Initial pose (north, east, down, roll, pitch, yaw):
+0.0 0.0 -5.0 0.0 0.0 0.0
+#Initial velocity (u, v, w, p, q, r): 0.16350001
+0.0 0.0 0.0 0.0 0.0 0.0
+#Mass Matrix:
+460.0    0.0    0.0    0.0    0.0    0.0
+  0.0  460.0     0.0    0.0    0.0    0.0
+  0.0    0.0  460.0     0.0    0.0    0.0
+  0.0    0.0    0.0  105.26   0.0    0.0
+  0.0    0.0    0.0    0.0  104.02   0.0
+  0.0    0.0    0.0    0.0    0.0   50.31
+#Added mass matrix:
+293.0    0.0    0.0    0.0    0.0    0.0
+  0.0  302.0    0.0    0.0    0.0    0.0
+  0.0    0.0  326.0    0.0    0.0    0.0
+  0.0    0.0    0.0   52.0    0.0    0.0
+  0.0    0.0    0.0    0.0   52.0    0.0
+  0.0    0.0    0.0    0.0    0.0   57.0
+#Linear damping matrix:
+ 29.0    0.0    0.0    0.0    0.0    0.0
+  0.0   41.0    0.0    0.0    0.0    0.0
+  0.0    0.0  254.0    0.0    0.0    0.0
+  0.0    0.0    0.0   34.0    0.0    0.0
+  0.0    0.0    0.0    0.0   59.0    0.0
+  0.0    0.0    0.0    0.0    0.0   45.0
+#Quadratic damping matrix:
+292.0    0.0    0.0    0.0    0.0    0.0
+  0.0  584.0    0.0    0.0    0.0    0.0
+  0.0    0.0  635.0    0.0    0.0    0.0
+  0.0    0.0    0.0   84.0    0.0    0.0
+  0.0    0.0    0.0    0.0  148.0    0.0
+  0.0    0.0    0.0    0.0    0.0  100.0
+#Centre of gravity (x, y, z, relative to Centre of Orientation)
+0.0 0.0 0.15
+#Centre of buoyancy (x, y, z, relative to Centre of Orientation)
+0.0 0.0 -0.12
+#Volume of ROV
+0.4492777405
+#Number of thrusters
+5
+#Thrust allocation matrix T (tau=T*f)
+0.0   0.0   0.0  0.984807753   0.984807753 
+1.0   0.0   0.0 -0.1736481777  0.1736481777 
+0.0   1.0   1.0  0.0           0.0
+0.0   0.20 -0.20 0.0           0.0
+0.0   0.0   0.0  0.0           0.0 
+0.166 0.0   0.0  0.335333322 -0.335333322
+#Thruster diameters
+0.22 0.22 0.22 0.22 0.22 0.22
+#Function for thrust coefficient. first line for n>0, second for n<0 (K_t=a*J³+b*J²+c*J+d)
+0.5 -0.66 -0.25 0.24
+0.025 -0.28 0.17 0.15
+#Thrust loss factors
+1.04 0.58 0.58 0.72 0.72
+1.04 0.58 0.58 0.53 0.53
+#RPM Limits
+1450 1450 1450 1450 1450
+-1450 -1450 -1450 -1450 -1450
+#Topics in loop for dynamics pose and twist
+Dynamics/ROS/Pose
+Dynamics/ROS/Twist
+#Topic for controller (RPMcontrol/DP, RPMcontrol/Path)
+RPMcontrol/Path
+#Topic guidance (LOS_A, LOS_B)
+Guidance/LOS_A
+#Path Style (supported styles: sine, spiral, lawn_mower, straight)
+lawn_mower
+#Number of waypoints:
+200

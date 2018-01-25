@@ -1,0 +1,8 @@
+import logging; logger = logging.getLogger("morse." + __name__)
+import roslib; roslib.load_manifest('std_msgs')
+from std_msgs.msg import Float32MultiArray
+from morse.middleware.ros import ROSSubscriber
+
+class
+
+
