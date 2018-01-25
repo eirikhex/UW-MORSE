@@ -21,6 +21,7 @@ The simulation environmnet contains tree parts:
 8. Share your work, I will accept PRs
 
 If the environment is used, a reference to this repository or to this article is appreciated:
+
 E. H. Henriksen, I. Schjølberg and T. B. Gjersvik, "UW MORSE: The underwater Modular Open Robot Simulation Engine," 2016 IEEE/OES Autonomous Underwater Vehicles (AUV), Tokyo, 2016, pp. 261-267.
 doi: 10.1109/AUV.2016.7778681
 URL: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7778681&isnumber=7778649
