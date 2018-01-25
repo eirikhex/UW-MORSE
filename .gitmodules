@@ -1,0 +1,6 @@
+[submodule "blender"]
+	path = blender
+	url = https://github.com/eirikhex/blender.git
+[submodule "morse"]
+	path = morse
+	url = https://github.com/eirikhex/morse.git
